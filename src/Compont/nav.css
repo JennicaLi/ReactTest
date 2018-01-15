@@ -1,0 +1,43 @@
+
+.navbar{
+    height:56px;
+    border:1px pink solid;
+}
+.navbar::after{
+    clear:both;
+}
+.nav-logo{
+    padding:0;
+    float:left;
+    height: 56px;
+}
+
+img{
+    vertical-align: middle;
+    border: 0;
+}
+
+.nav-logo img{
+    height: 100%;
+}
+
+.btn{
+    border:1px solid transparent;
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+    /*padding:6px 12px;*/
+}
+.btn-write{
+    float:right;
+    width:100px;
+    height:40px;
+    border-radius:20px;
+    background-color: coral;
+    color:white;
+    line-height: 24px;
+}
+
+.ic-write::before{
+    content: "\E60E";
+}
