@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import NavBar from './Compont/NavBar';
 import ToDos from "./Compont/ToDos";
 
 class App extends Component {

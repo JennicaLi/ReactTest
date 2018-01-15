@@ -21,3 +21,5 @@ yarn-debug.log*
 yarn-error.log*
 
 .idea/*
+/todoListDemo/node_modules
+/todoListDemo/.idea
