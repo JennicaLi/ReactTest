@@ -7,13 +7,24 @@ function TextBox(props){
         props.changeFunc(e.target.value,e.target.name);
 
     }
-    return (
-        <div className="div-bor">
-            <i className={props.iconClass}> </i>
-            <input type="text" className="input-text" value="" placeholder={props.placeholder} name={props.name} onChange={(e)=>handleChange(e)}/>
-
-        </div>
-    )
+    if(props.isPwd) {
+        return (
+            <div className="div-bor">
+                <i className={props.iconClass}> </i>
+                <input type="password" className="input-text" placeholder={props.placeholder} name={props.name}
+                       onChange={(e) => handleChange(e)}/>
+            </div>
+        )
+    }
+    else {
+        return (
+            <div className="div-bor">
+                <i className={props.iconClass}> </i>
+                <input type="text" className="input-text" placeholder={props.placeholder} name={props.name}
+                       onChange={(e) => handleChange(e)}/>
+            </div>
+        )
+    }
 }
 
 export default TextBox;

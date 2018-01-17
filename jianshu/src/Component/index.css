@@ -1,3 +1,7 @@
+*{
+    margin:0;
+    padding:0;
+}
 /*textbox前面的图标*/
 .icon-user{
     position: absolute;
@@ -8,24 +12,27 @@
     width: 30px; /*设置图片显示的宽*/
     height: 100%; /*图片显示的高*/
     left:10px;
-    margin-bottom: 0;
+
 }
 
 
 /*textbox的输入框*/
 .input-text{
-    padding:5px 5px 5px 35px;
+/*padding:10px;*/
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
     border:1px solid gray;
     width:100%;
     height: 40px;
+    text-indent: 30px;
+    background-color:hsla(0,0%,71%,.1);
 }
 /*textbox的包围框*/
 .div-bor{
     position: relative;
     width: 300px;
+    /*border:1px solid green;*/
 }
 
 .icon-pwd{
@@ -45,8 +52,36 @@
     background-color: rgb(6,147,205);
     border-radius: 20px;
     border:none;
+    margin:20px 0;
+    color:white;
+    font-size: 18px;
 }
 
 .login-container{
     width:300px;
+    margin:auto;
+}
+
+.main{
+    width:400px;
+    /*border:1px solid pink;*/
+    display: table-cell;
+    vertical-align: center;
+    horiz-align: center;
+    margin:30px auto 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 8px  rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    background-color:#fff;
+    padding:50px;
+}
+
+.sign{
+    background-color:#f1f1f1;
+    height: 100%;
+    min-height: 750px;
+    text-align: center;
 }
